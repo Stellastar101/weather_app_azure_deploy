@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "DATABASE_URL": "postgresql://KOKOB:I1FQkTtNK6K3iZVD_bX1yg@humble-ostrich-4707.6zw.aws-eu-west-1.cockroachlabs.cloud:26257/weather_app_data?sslmode=require"
+  }
+}
