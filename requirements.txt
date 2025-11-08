@@ -1,0 +1,8 @@
+azure-functions
+psycopg2-binary
+pandas
+urllib3
+openmeteo-requests
+requests-cache
+retry-requests
+numpy
