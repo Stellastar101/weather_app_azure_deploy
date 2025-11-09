@@ -280,7 +280,7 @@ def process_all_sites_optimized(sites: List[Tuple[int, float, float]]) -> List[T
     
     return results
 
-def main(mytimer: func.TimerRequest) -> None:
+def main(timer: func.TimerRequest) -> None:
     """Azure Function entry point"""
     start_time = datetime.now()
     
@@ -328,7 +328,5 @@ def main(mytimer: func.TimerRequest) -> None:
                 logger.info(f"  Site {site_id}: {message[:100]}...")
                 failed_count += 1
     
-    return func.HttpResponse(
-        f"Function executed successfully. Processed {len(sites)} sites with {successful_updates} successful updates in {duration.total_seconds():.2f} seconds.",
-        status_code=200
-    )
+    
+    logger.info(f"Function executed successfully. Processed {len(sites)} sites with {successful_updates} successful updates in {duration.total_seconds():.2f} seconds.")
