@@ -5,5 +5,5 @@ urllib3
 openmeteo-requests
 requests-cache
 retry-requests
-psycopg2
 numpy
+
